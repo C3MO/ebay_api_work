@@ -4,14 +4,17 @@ import tkinter as tk
 from tkinter import *
 
 if __name__ == "__main__":
-    m = tk.Tk()
-    m.title('Produktsuche')
-    back = tk.Frame(master=m, width=800, height=500, bg='black')
-    Label(m, text='Geben sie ihr gewünschtes Produkt ein!').grid(row=0)
-    e1 = tk.Entry(m)
-    e1 = tk.Entry(row=0, column=1)
-    #button = tk.Button(m, text='Suchen', width=25, command=m.destroy)
-    #button.pack()
+    m = Tk(className="Produktsuche - Händler")
+    m.geometry("800x500")
+    labMain = tk.Label(m,text = 'Reparatur/Produkt Preise')
+    labMain.pack(side = 'top')
+    l1 = tk.Label(m, text ='Geben sie ihr gesuchtes Produkt ein: ')
+    l1.pack(side = LEFT, anchor ='n')
+    e1 =tk.Entry(m, width = 55)
+    #e1.insert()
+    e1.pack(side = 'left', anchor= 'n')
+    button1 = tk.Button(m, text='Suchen', command=m.destroy)
+    button1.pack(side= 'right', anchor = 'n')
     m.mainloop()
 
 makeNum = ['1','2','3','4','5','6','7','8','9','0','.']
