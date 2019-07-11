@@ -1,0 +1,10 @@
+from ebaysdk.finding import Connection as Ebay
+from bs4 import BeautifulSoup as BS
+
+#Ebay API
+
+Keywords = ''
+maxprice = ''
+api = Ebay(appid = 'CemSaygi-PythonSe-PRD-9b44724db-b657c8b2',
+    config_file = 'ebay.yml')
+api_request = {'keywords': Keywords, 'outputSelector': 'SellerInfo'}
