@@ -53,16 +53,6 @@ for item in items:
         print ("*~*~*~*~*~*~*~*~*~*")
     urlNumber += 1
 
-while True:
-    inpu = input('Enter a URL Number to get the items URL: ')
-    try:
-        inpu = int(inpu)
-        print (items[inpu]).viewitemurl
-    except:
-        if inpu.lower() == 'exit':
-            break
-        else:
-            print ('Please enter a URL number or enter exit if you would like to exit')
 
 
 
